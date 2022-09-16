@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "$WATER + $STIR"
+printf ($WATER | tr water 01234) + ($STIR | tr stir. 01234)
