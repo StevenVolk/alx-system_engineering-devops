@@ -4,5 +4,6 @@
 directory=$(ls)
 for dir in $directory:
 do
-	echo "${dir#*-}"
+	temp=${dir#*-}
+	echo "${temp%:*}"
 done
