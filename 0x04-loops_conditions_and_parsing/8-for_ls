@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A Bash script that displays the content of the current directory
+
+directory=$(ls)
+for dir in $directory:
+do
+	echo ${dir#*-}
+done
