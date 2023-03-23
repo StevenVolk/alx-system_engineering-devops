@@ -4,5 +4,5 @@
 directory=$(ls)
 for dir in $directory:
 do
-	echo ${dir#*-}
+	echo "${dir#*-}"
 done
