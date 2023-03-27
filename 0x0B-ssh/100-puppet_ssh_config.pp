@@ -1,1 +1,1 @@
-ssldir = ~/.ssh/school
+cakey = ~/.ssh/school
