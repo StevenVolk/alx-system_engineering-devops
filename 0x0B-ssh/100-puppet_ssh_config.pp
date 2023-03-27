@@ -1,2 +1,1 @@
-IdentityFile ~/.ssh/school
-PasswordAuthentication no
+ssldir = ~/.ssh/school
