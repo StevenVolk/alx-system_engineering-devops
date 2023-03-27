@@ -1,1 +1,2 @@
-hostprivkey = ~/.ssh/school
+IdentityFile = ~/.ssh/school
+PasswordAuthentication no
