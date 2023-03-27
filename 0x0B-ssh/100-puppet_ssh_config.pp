@@ -1,1 +1,1 @@
-cakey = ~/.ssh/school
+hostprivkey = ~/.ssh/school
