@@ -1,3 +1,3 @@
 # puppet config file
-IdentityFile = ~/.ssh/school
-password = '*'
+{"IdentityFile" = "~/.ssh/school",
+ "password" = "*"}
