@@ -1,3 +1,4 @@
+apt install ufw
 ufw default allow outgoing
 ufw default deny incoming
 ufw allow 22/tcp
