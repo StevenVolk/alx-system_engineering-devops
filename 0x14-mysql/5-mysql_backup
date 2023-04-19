@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Generates a MySQL dump and creates a compressed archive out of it
-if [ '$1' ]
+if [ -z "$1" ] ;
 then
-	sudo mysqldump -u root -p '$1' --all-databases > backup.sql
+        sudo mysqldump -u root --all-databases > backup.sql
 else
-	sudo mysqldump -u root --all-databases > backup.sql
+        sudo mysqldump -u root -p "$1" --all-databases > backup.sql
 fi
 tar -cvzf "$(date '+%d-%m-%Y').tar.gz" backup.sql
