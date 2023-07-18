@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Run the whoami command under the user passed as an argument
-
-sudo -u "$1" bash -c whoami
+if [ "$1" ] ; then
+    sudo -u "$1" bash -c whoami
+fi
