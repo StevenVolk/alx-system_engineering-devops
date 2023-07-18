@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Run the whoami command under the user passed as an argument
 if [ "$1" ] ; then
-    sudo "$1" bash -c "whoami"
+    chsh -s "$(which bash)" "$1" && sudo "$1" bash -c "whoami"
 fi
