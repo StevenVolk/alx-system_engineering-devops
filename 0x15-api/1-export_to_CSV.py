@@ -15,5 +15,5 @@ if __name__ == "__main__":
     todo_list = get(url + "users/{}/todos".format(u_id)).json()
     with open("{}.csv".format(u_id), "w") as f:
         for task in todo_list:
-            file.write("'{}','{}','{}','{}'\n".format(u_id, username,
+            f.write("'{}','{}','{}','{}'\n".format(u_id, username,
                        task.get("completed"), task.get("title")))
