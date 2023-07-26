@@ -15,6 +15,7 @@ if __name__ == "__main__":
     user = get(url + "users/{}".format(u_id)).json().get('name')
     todo_list = get(url + "users/{}/todos".format(u_id)).json()
     tasks = [task.get("title") for task in todo_list if task["completed"]]
-    print("Employee {} is done with tasks({}/{}):".format(user, len(tasks), len(todo_list)))
+    print("Employee {} is done with tasks({}/{}):"
+          .format(user, len(tasks), len(todo_list)))
     for task in tasks:
         print("\t {}".format(task))
