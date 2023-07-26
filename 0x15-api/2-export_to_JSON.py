@@ -16,5 +16,5 @@ if __name__ == "__main__":
     todo_list = get(url + "users/{}/todos".format(u_id)).json()
     with open("{}.json".format(u_id), "w") as f:
         dump({u_id: [{"task": task["title"],
-             "completed": task["completed"],
-              "username": username} for task in todo_list]}, f)
+             "completed": task["completed"], "username": username}
+             for task in todo_list]}, f)
